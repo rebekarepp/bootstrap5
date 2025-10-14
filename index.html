@@ -3,13 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/main.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+    <link href="/css/main.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Bootstrap5</title>
     <style>
       section {
         padding: 60px 0;
+      }
+      /*Fonts*/
+       body {
+        font-family: "Noto Sans", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .card-title,
+      .accordion-button,
+      .modal-title {
+        font-family: "Cinzel", serif;
+      }
+
+      .btn {
+        font-family: "Noto Sans", sans-serif;
+      }
+
+      .navbar-brand {
+        font-family: "Cinzel", serif;
       }
     </style>
   </head>
@@ -20,7 +51,7 @@
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
           <span class="fw-bold text-secondary">
-            <i class="bi bi-book-half"></i> Net Ninja Pro - the Book
+            <i class="bi bi-book-half"></i> Heaven Official's Blessing
           </span>
         </a>
         <!-- toggle button for mobile nav -->
@@ -64,30 +95,44 @@
     </nav>
     <!-- main image and intro text -->
 
-    <section id="into">
+    <section id="intro" class="bg-bgmain text-light">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-5 text-center text-md-start">
             <h1>
-              <div class="display-2">Black-Belt</div>
-              <div class="display-5 text-muted">Your Coding Skills</div>
+              <div class="display-2 text-secondary">
+                Heaven Official's Blessing
+              </div>
+              <div class="display-6 text-secondary">By Mo Xiang Tong Xiu</div>
             </h1>
-            <p class="lead my-4 text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="lead my-4 text-altlight">
+              An epic historical fantasy about a prince and the mysterious man
+              by his side.
             </p>
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
             <!-- open sidebar/ offcanvas -->
 
-              <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Explore my other books</a>
+            <a
+              href="#sidebar"
+              class="d-block mt-3 text-altlight"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Explore other similar books</a
+            >
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-           <!-- tooltip -->
-            <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
+            <!-- tooltip -->
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Heaven Official’s Blessing Book Cover"
+            >
               <img
-              class="img-fluid"
-              src="assets/hobcover.png"
-              alt="ebook cover"
-            />
+                class="img-fluid"
+                src="assets/hobcover.png"
+                alt="ebook cover"
+              />
             </span>
           </div>
         </div>
@@ -108,12 +153,11 @@
             <div class="card border-0">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Starter Edition</h4>
-                <p class="lead card-subtitle">eBook Download Only</p>
-                <p class="display-5 my-4 text-primary fw-bold">12.99€</p>
+                <p class="lead card-subtitle">eBook Only</p>
+                <p class="display-5 my-4 text-primary fw-bold">9.99€</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Alias itaque ex tenetur, voluptatum culpa sed necessitatibus
-                  voluptate harum.
+                  Full digital copy of Heaven’s Official’s Blessing, easy to
+                  download and read anywhere.
                 </p>
                 <a href="" class="btn btn-outline-primary btn-lg mt-3"
                   >Buy now</a
@@ -129,12 +173,11 @@
               </div>
               <div class="card-body text-center py-5">
                 <h4 class="card-title">Complete edition</h4>
-                <p class="lead card-subtitle">eBook download & all updates</p>
-                <p class="display-4 my-4 text-primary fw-bold">18.99€</p>
+                <p class="lead card-subtitle">eBook download + extras</p>
+                <p class="display-4 my-4 text-primary fw-bold">14.99€</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Alias itaque ex tenetur, voluptatum culpa sed necessitatibus
-                  voluptate harum.
+                  Includes the eBook, extra short stories, author notes, and
+                  high-resolution artwork.
                 </p>
                 <a href="#" class="btn btn-outline-primary btn-lg mt-3"
                   >Buy Now</a
@@ -146,13 +189,12 @@
           <div class="col-8 col-lg-4 col-xl-3">
             <div class="card border-0">
               <div class="card-body text-center py-4">
-                <h4 class="card-title">Ultimate Edition</h4>
-                <p class="lead card-subtitle">download, updates & extras</p>
+                <h4 class="card-title">Ultimate Collector Edition</h4>
+                <p class="lead card-subtitle">Print + digital + extras</p>
                 <p class="display-5 my-4 text-primary fw-bold">24.99€</p>
                 <p class="card-text mx-5 text-muted d-none d-lg-block">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Alias itaque ex tenetur, voluptatum culpa sed necessitatibus
-                  voluptate harum.
+                  Hardcover book, eBook, bonus stories, artwork, and exclusive
+                  content for collectors.
                 </p>
                 <a href="" class="btn btn-outline-primary btn-lg mt-3"
                   >Buy now</a
@@ -166,18 +208,16 @@
 
     <!-- topics at a glance -->
 
-    <section id="topics">
+    <section id="topics" class="bg-bgmain">
       <div class="container-md">
         <div class="text-center">
-          <h2>Inside the Book...</h2>
-          <p class="lead text-muted">
-            A quick glance at the topics you'll learn
+          <h2 class="text-secondary">Inside the Book...</h2>
+          <p class="text-secondary">
+            A glimpse into the adventures of Xie Lian and Hua Cheng
           </p>
         </div>
 
-        <div
-          class="row my-5 g-5 justify-content-center-around align-items-center"
-        >
+        <div class="row my-5 g-5 justify-content-around align-items-center">
           <div class="col-6 col-lg-4">
             <img src="assets/kindlehob.png" class="img-fluid" alt="ebook" />
           </div>
@@ -196,7 +236,7 @@
                     aria-expanded="true"
                     aria-controls="chapter-1"
                   >
-                    Chapter 1 - Your First Web Page
+                    Book 1 - The Laughingstock Ascends & the Ghost Bride Mystery
                   </button>
                 </h2>
                 <div
@@ -207,17 +247,16 @@
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Pariatur laudantium excepturi in consequuntur amet porro
-                      iure, cum totam itaque officiis cupiditate, voluptatibus
-                      ab libero laboriosam reprehenderit animi facilis atque
-                      maxime?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut totam hic, debitis eligendi autem maiores quibusdam
-                      recusandae doloribus eius tenetur rem mollitia ratione,
-                      consequuntur porro animi dolore, at possimus.
+                      Eight hundred years after his fall from grace, Xie Lian,a
+                      once the beloved Crown Prince of Xianle ascends to the
+                      heavens for the third time. Stripped of power and
+                      followers, he becomes the subject of ridicule among gods.
+                      Tasked with investigating strange ghostly affairs on
+                      earth, he encounters San Lang, a mysterious young man
+                      whose charm and devotion hide a darker truth. Together,
+                      they uncover the tale of a tragic ghost bride, marking the
+                      beginning of Xie Lian’s return to a world filled with both
+                      divine duty and haunting memory.
                     </p>
                   </div>
                 </div>
@@ -232,7 +271,7 @@
                     aria-expanded="false"
                     aria-controls="chapter-2"
                   >
-                    Chapter 2 - Mastering CSS
+                    Book 2 - Shadows of the Past & Ghostly Encounters
                   </button>
                 </h2>
                 <div
@@ -243,17 +282,14 @@
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Pariatur laudantium excepturi in consequuntur amet porro
-                      iure, cum totam itaque officiis cupiditate, voluptatibus
-                      ab libero laboriosam reprehenderit animi facilis atque
-                      maxime?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut totam hic, debitis eligendi autem maiores quibusdam
-                      recusandae doloribus eius tenetur rem mollitia ratione,
-                      consequuntur porro animi dolore, at possimus.
+                      Having formed an unlikely partnership with San Lang, Xie
+                      Lian begins to take on new heavenly missions that lead him
+                      deep into the realm of restless spirits. Each encounter
+                      reveals more about the boundary between gods and ghosts
+                      and the compassion that can exist even in death. As Xie
+                      Lian learns more about San Lang’s true nature, he starts
+                      to question what truly separates the living from the
+                      damned, and whether redemption is ever truly out of reach.
                     </p>
                   </div>
                 </div>
@@ -268,7 +304,7 @@
                     aria-expanded="false"
                     aria-controls="chapter-3"
                   >
-                    Chapter 3 - The Power of JavaScript
+                    Book 3 - Calamities and Confessions
                   </button>
                 </h2>
                 <div
@@ -279,17 +315,15 @@
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Pariatur laudantium excepturi in consequuntur amet porro
-                      iure, cum totam itaque officiis cupiditate, voluptatibus
-                      ab libero laboriosam reprehenderit animi facilis atque
-                      maxime?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut totam hic, debitis eligendi autem maiores quibusdam
-                      recusandae doloribus eius tenetur rem mollitia ratione,
-                      consequuntur porro animi dolore, at possimus.
+                      The mysteries of the past begin to resurface as Xie Lian
+                      faces remnants of his own kingdom’s downfall. Hidden
+                      truths about the Four Great Calamities, powerful ghosts
+                      who defied the heavens, come to light, and their
+                      connection to Xie Lian’s story grows undeniable. As he
+                      navigates deception and divine hypocrisy, he must confront
+                      both the sins of gods and his own lingering guilt. Amid
+                      the chaos, the quiet devotion between him and Hua Cheng
+                      becomes a light that cuts through centuries of darkness.
                     </p>
                   </div>
                 </div>
@@ -304,7 +338,7 @@
                     aria-expanded="false"
                     aria-controls="chapter-4"
                   >
-                    Chapter 4 - Storing Data (Firebase Databases)
+                    Book 4 - Blood, Betrayal, and Hidden Wars
                   </button>
                 </h2>
                 <div
@@ -315,17 +349,14 @@
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Pariatur laudantium excepturi in consequuntur amet porro
-                      iure, cum totam itaque officiis cupiditate, voluptatibus
-                      ab libero laboriosam reprehenderit animi facilis atque
-                      maxime?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut totam hic, debitis eligendi autem maiores quibusdam
-                      recusandae doloribus eius tenetur rem mollitia ratione,
-                      consequuntur porro animi dolore, at possimus.
+                      Tensions rise between the heavens and the ghost realms,
+                      revealing the fragile order that holds the three worlds
+                      together. Old allies become strangers, and former enemies
+                      show unexpected kindness. Xie Lian is forced to see the
+                      cruelty hidden behind divine glory and the loyalty buried
+                      within those cast aside. His past, once shrouded in
+                      tragedy, now reveals its sharpest edges where love and
+                      ruin were born from the same act of faith.
                     </p>
                   </div>
                 </div>
@@ -340,7 +371,7 @@
                     aria-expanded="false"
                     aria-controls="chapter-5"
                   >
-                    Chapter 5 - User Authentication
+                    Book 5 - Convergence of Fates
                   </button>
                 </h2>
                 <div
@@ -351,23 +382,122 @@
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Pariatur laudantium excepturi in consequuntur amet porro
-                      iure, cum totam itaque officiis cupiditate, voluptatibus
-                      ab libero laboriosam reprehenderit animi facilis atque
-                      maxime?
+                      As long-buried histories come to the surface, the fates of
+                      gods, ghosts, and mortals intertwine. Xie Lian’s path
+                      collides with those of other fallen deities, each with
+                      their own story of despair and defiance. The truth behind
+                      his multiple ascensions begins to unfold, showing how
+                      mercy and misfortune have always walked hand in hand.
+                      Every choice he’s made leads him closer to understanding
+                      Hua Cheng’s unwavering devotion and the cost of such
+                      eternal love.
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-6">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="false"
+                    aria-controls="chapter-6"
+                  >
+                    Book 6 - Revelation & Reckoning
+                  </button>
+                </h2>
+                <div
+                  id="chapter-6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-6"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut totam hic, debitis eligendi autem maiores quibusdam
-                      recusandae doloribus eius tenetur rem mollitia ratione,
-                      consequuntur porro animi dolore, at possimus.
+                      With all secrets laid bare, Xie Lian must face the
+                      consequences of centuries-old actions and divine
+                      manipulation. Betrayals strike from unexpected places, and
+                      the truth threatens to tear apart what little peace
+                      remains in the heavens. Through pain, forgiveness, and
+                      revelation, Xie Lian learns what it truly means to be a
+                      god not through power, but through compassion. The bond
+                      between him and Hua Cheng is tested, yet it becomes more
+                      unbreakable than ever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-7">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-7"
+                    aria-expanded="false"
+                    aria-controls="chapter-7"
+                  >
+                    Book 7 - The Final Reckoning
+                  </button>
+                </h2>
+                <div
+                  id="chapter-7"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      War looms across the realms, and the fragile line between
+                      salvation and destruction begins to blur. Xie Lian stands
+                      at the center of a storm that will decide the future of
+                      gods and ghosts alike. In the chaos, old wounds resurface,
+                      and every sacrifice demands a reckoning. The choices he
+                      makes now will either bring peace to a world drenched in
+                      sorrow or plunge it into eternal ruin.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-8">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-8"
+                    aria-expanded="false"
+                    aria-controls="chapter-8"
+                  >
+                    Chapter 8 - Epilogue & Forever Bonds
+                  </button>
+                </h2>
+                <div
+                  id="chapter-8"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      After centuries of turmoil, the story comes full circle.
+                      The heavens find balance once again, and those who
+                      suffered finally find rest. For Xie Lian and Hua Cheng,
+                      their journey — filled with laughter, tears, and
+                      redemption — reaches a quiet, tender conclusion. Love that
+                      endured death, time, and divinity becomes something
+                      eternal, something that even the heavens themselves must
+                      bless.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -379,7 +509,7 @@
       <div class="container-lg">
         <div class="text-center">
           <h2><i class="bi bi-stars text-altdark"></i> Book Reviews</h2>
-          <p class="lead">What my students have said about the book...</p>
+          <p class="lead">What fans have said about the books...</p>
         </div>
         <div class="row justify-content-center my-5">
           <div class="col-lg-8">
@@ -392,14 +522,13 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <h5 class="mb-1">So Addictive</h5>
                 <p class="mb-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore labore autem blanditiis nulla. Obcaecati quisquam
-                  esse, labore eius cum soluta? Recusandae porro possimus magni
-                  similique ipsum expedita voluptas facere ex?
+                  Once I started reading, I couldn’t stop. The mix of mystery,
+                  action, and humor keeps you hooked. Totally recommend to
+                  anyone who loves fantasy.
                 </p>
-                <small>Review by Mario</small>
+                <small>Review by Layla</small>
               </div>
               <div class="list-group-item py-3">
                 <div class="pb-2">
@@ -409,14 +538,14 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <h5 class="mb-1">Best thing I have ever purchased</h5>
+                <h5 class="mb-1">Unforgettable Characters</h5>
                 <p class="mb-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore labore autem blanditiis nulla. Obcaecati quisquam
-                  esse, labore eius cum soluta? Recusandae porro possimus magni
-                  similique ipsum expedita voluptas facere ex?
+                  Hua Cheng and Xie Lian’s relationship is beautifully written.
+                  Their interactions are witty, tender, and sometimes
+                  heartbreaking. The character development throughout the story
+                  makes every emotional moment feel genuine.
                 </p>
-                <small>Review by Tyler</small>
+                <small>Review by Maria</small>
               </div>
               <div class="list-group-item py-3">
                 <div class="pb-2">
@@ -426,14 +555,13 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <h5 class="mb-1">I highly recommend</h5>
+                <h5 class="mb-1">Loved It</h5>
                 <p class="mb-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore labore autem blanditiis nulla. Obcaecati quisquam
-                  esse, labore eius cum soluta? Recusandae porro possimus magni
-                  similique ipsum expedita voluptas facere ex?
+                  The characters are so real and relatable. Hua Cheng and Xie
+                  Lian’s friendship and moments together were my favorite parts.
+                  Can’t wait to read more!
                 </p>
-                <small>Review by Paul</small>
+                <small>Review by Paula</small>
               </div>
               <div class="list-group-item py-3">
                 <div class="pb-2">
@@ -443,14 +571,10 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <h5 class="mb-1">
-                  Super useful for every starter web developer
-                </h5>
+                <h5 class="mb-1">Highly Recommend</h5>
                 <p class="mb-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore labore autem blanditiis nulla. Obcaecati quisquam
-                  esse, labore eius cum soluta? Recusandae porro possimus magni
-                  similique ipsum expedita voluptas facere ex?
+                  I laughed, I cried, and I was on the edge of my seat a few
+                  times. The story is really unique and super engaging.
                 </p>
                 <small>Review by Chamber</small>
               </div>
@@ -462,14 +586,13 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <h5 class="mb-1">Worth the money and helps a lot</h5>
+                <h5 class="mb-1">Really Enjoyed It</h5>
                 <p class="mb-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore labore autem blanditiis nulla. Obcaecati quisquam
-                  esse, labore eius cum soluta? Recusandae porro possimus magni
-                  similique ipsum expedita voluptas facere ex?
+                  The story is full of surprises and cool characters. Some parts
+                  were emotional, others funny. Overall, it was just a really
+                  fun and engaging read.
                 </p>
-                <small>Review by Sam</small>
+                <small>Review by Tyla</small>
               </div>
               <div class="list-group-item py-3">
                 <div class="pb-2">
@@ -479,12 +602,11 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-half"></i>
                 </div>
-                <h5 class="mb-1">I love it, learned so much from this</h5>
+                <h5 class="mb-1">Unexpectedly Emotional</h5>
                 <p class="mb-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore labore autem blanditiis nulla. Obcaecati quisquam
-                  esse, labore eius cum soluta? Recusandae porro possimus magni
-                  similique ipsum expedita voluptas facere ex?
+                  I didn’t expect to feel so connected to the characters. There
+                  are funny moments, exciting fights, and touching scenes that
+                  really stayed with me after finishing.
                 </p>
                 <small>Review by Kayla</small>
               </div>
@@ -497,141 +619,227 @@
     <!-- contact form -->
     <!-- form-control, form-label, form-select, input-group, input-group-text -->
 
-<section id="contect">
-<div class="container-lg">
-  <div class="text-center">
-    <h2>Get in Touch</h2>
-    <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
-  </div>
-
-  <div class="row justify-content-center my-5">
-
-    <div class="col-lg-6">
-      <form>
-       <label for="email" class="form-label">Email adress:</label>
-       <div class="mb-4 input-group">
-        <span class="input-group-text">
-        <i class="bi bi-envelope-fill"></i>
-        </span>
-      <input type="email" class="form-control" id="email" placeholder="e.g. rebeka@example.com">
-
-      <!-- tooltip-->
-        <span class="input-group-text">
-          <span class="tt" data-bs-placement="bottom" title="Enter an email adress we can reply to.">
-        <i class="bi bi-question/circle text-muted"></i>
-        </span>
-        </span>
-       </div>
-       
-
-       <label for="name" class="form-label">Name:</label>
-       <div class="mb-4 input-group">
-      <span class="input-group-text">
-        <i class="bi bi-person-fill"></i>
-        </span>
-       <input type="text" class="form-control" id="name", placeholder="e.g. Rebeka">
-
-       <!-- tooltip-->
-        <span class="input-group-text">
-          <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
-        <i class="bi bi-question/circle text-muted"></i>
-        </span>
-        </span>
-
+    <section id="contact" class="bg-altlight">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Have questions about Heaven Official’s Blessing? Send us a message!
+          </p>
         </div>
 
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email adress:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. rebeka@example.com"
+                />
 
-       <label for="subject" class="form-label">What is your question about?</label>
-       <div class="mb-4 input-group mb-4">
-        <span class="input-group-text">
-        <i class="bi bi-chat-right-dots-fill"></i>
-      </span>
-       <select class="form-select" id="subject">
-        <option value="pricing" selected>Pricing query</option>
-        <option value="content">Content query</option>
-        <option value="other">Other query</option>
-       </select>
-       </div>
+                <!-- tooltip-->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter an email adress we can reply to."
+                  >
+                    <i class="bi bi-question/circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
 
-       
-       <div class="form-floating mb-4 mt-5">
-        <textarea id="query" class="form-control" style="height: 140px;"></textarea>
-        <label for="query">Your query...</label>
-       </div>
+              <label for="name" class="form-label">Name:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  ,
+                  placeholder="e.g. Rebeka"
+                />
 
-       <div class="mb-4 text-center">
-        <button type="submit" class="btn btn-secondary">Submit</button>
-       </div>
-       
-      </form>
-    </div>
+                <!-- tooltip-->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Pretty self explanatory really..."
+                  >
+                    <i class="bi bi-question/circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
 
-  </div>
-</div>
-</section>
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
+              <div class="mb-4 input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query">Your query...</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- get updates / modal trigger -->
 
     <section class="bg-light">
-<div class="container">
-  <div class="text-center">
-    <h2>Stay in The Loop</h2>
-    <p class="lead">Get the latest updates as they happen</p>
-  </div>
-<div class="row justify-content-center">
-  <div class="col-md-8 text-center">
-    <p class="text-muted my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non vel facilis rerum nostrum ipsum ab natus temporibus! Error nemo consequatur, quisquam soluta omnis minus amet eaque itaque ex sunt nulla?</p>
-    <button class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#reg-modal">
-      Register for Updates
-    </button>
-  </div>
-</div>
-</div>
+      <div class="container">
+        <div class="text-center">
+          <h2>Stay in the Heavens Loop</h2>
+          <p class="lead">
+            Get the latest news, new chapters, and special content from Heaven
+            Official’s Blessing
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              Don’t miss updates on Xie Lian’s adventures, special art releases,
+              or bonus stories. Join other fans and keep your place among the
+              heavens.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Subscribe for Updates
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
-     <!-- modal itself -->
+    <!-- modal itself -->
 
-     <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus doloribus cum praesentium consequatur incidunt aliquam sit maxime ducimus id eaque distinctio culpa sapiente aperiam, dolorem tempore nobis, adipisci expedita.</p>
-              <label for="modal-email" class="form-label">Your email address:</label>
-              <input type="email" class="form-control" id="modal-email" placeholder="e.g. rebeka@gmail.com">
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary">Submit</button>
-            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus
+              doloribus cum praesentium consequatur incidunt aliquam sit maxime
+              ducimus id eaque distinctio culpa sapiente aperiam, dolorem
+              tempore nobis, adipisci expedita.
+            </p>
+            <label for="modal-email" class="form-label"
+              >Your email address:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              placeholder="e.g. rebeka@gmail.com"
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
         </div>
       </div>
-     </div>
+    </div>
 
-     <!-- offcanvas -->
+    <!-- offcanvas -->
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum architecto, repellat ad cupiditate dolores deserunt dolor alias dicta sapiente voluptatibus eos! Ea vitae cum ut quidem repudiandae debitis beatae cupiditate.</p>
-    <!-- dropdown -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">Other Similar Books</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          If you loved Heaven’s Official’s Blessing, these stories also mix
+          adventure, fallen gods, spirits, and heartfelt bonds, blending
+          fantasy, romance, and action into worlds you won’t want to leave.
+        </p>
+        <!-- dropdown -->
 
-<div class="dropdown mt-3">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">Choose a book title</button>
-  <ul class="dropdown-menu" aria-labelledby="book-dropdown">
-    <li ><a href="#" class="dropdown-item">Become a React Superhero</a></li>
-     <li ><a class="dropdown-item" a href="#">Conquering Vue.js</a></li>
-      <li ><a class="dropdown-item" a href="#">Levelling up Your Next.js</a></li>
-  </ul>
-</div>
-
-  </div>
-</div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="book-dropdown"
+            data-bs-toggle="dropdown"
+          >
+            Choose a book title
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li>
+              <a href="#" class="dropdown-item"
+                >Celestial Shadows: Rise of the Fallen</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" a href="#"
+                >Moonlight Across the Heavens</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" a href="#"
+                >Eternal Lotus: The Ghost Emperor’s Heart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -639,10 +847,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const tooltips = document.querySelectorAll('.tt')
-      tooltips.forEach(t=> {
-        new bootstrap.Tooltip(t)
-      })
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
     </script>
   </body>
 </html>
